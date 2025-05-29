@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * @typedef {Object} Vehicle
@@ -13,10 +13,11 @@
  * @param {number} fuelPrice
  * @param {number} amount
  */
+
 function fillTank(customer, fuelPrice, amount = Infinity) {
   const { vehicle } = customer;
-  const freeSpace
-    = vehicle.maxTankCapacity - vehicle.fuelRemains;
+  const freeSpace =
+    vehicle.maxTankCapacity - vehicle.fuelRemains;
   const canBuy = customer.money / fuelPrice;
   const requiredAmount = Math.min(
     amount,
